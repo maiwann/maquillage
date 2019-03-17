@@ -1,5 +1,5 @@
 /*
- * GENERAL 
+ * GENERAL
  */
 
 
@@ -69,7 +69,8 @@ a {
 
 h2,
 h3 {
-  color: #29abe2;
+  color: crimson;
+  margin-top: 1em;
 }
 
 h1 {
@@ -191,8 +192,8 @@ header .search-engine input[type="submit"] {
 }
 .tooltip:before {
   content: attr(title);
-  position: absolute; 
-  bottom: 100%; 
+  position: absolute;
+  bottom: 100%;
   left: 50%;
   padding: .25em .5em;
   min-width: 75px;
@@ -391,7 +392,7 @@ header .search-engine input[type="submit"] {
 
 /*list of article*/
 .ghTree {
-  
+
   }
   .ghTreeItem {
     position: relative;
@@ -425,7 +426,7 @@ header .search-engine input[type="submit"] {
   .ghTreeMeta p {
     margin: 0;
   }
-  
+
 
 /*list of folder*/
 .ghTree h2:before {
@@ -454,7 +455,7 @@ header .search-engine input[type="submit"] {
   background-size: 16px;
 }
 
-/* 
+/*
 404
 */
 #error-404 {
