@@ -48,11 +48,14 @@ li {
           box-sizing: border-box;
 }
 
+$font: "Open Sans", Arial, sans-serif;
+$grey: #444;
+
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: $font;
   font-size: 1rem;
   line-height: 1.2;
-  color: #4d4d4d;
+  color: $grey;
   -webkit-font-smoothing: antialiased;
   background:  wheat;
   border-top: 3px solid red;
