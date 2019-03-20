@@ -48,10 +48,6 @@ li {
           box-sizing: border-box;
 }
 
-$font: "Open Sans", Arial, sans-serif;
-$blue: blue;
-$grey: grey;
-$yellow : yellow;
 
 body {
   font-family: $font;
@@ -59,7 +55,7 @@ body {
   line-height: 1.2;
   color: $grey;
   -webkit-font-smoothing: antialiased;
-  background:  $blue;
+  background: $background;
   border-top: 3px solid red;
 }
 
