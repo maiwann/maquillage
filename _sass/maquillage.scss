@@ -49,7 +49,9 @@ li {
 }
 
 $font: "Open Sans", Arial, sans-serif;
-$grey: blue;
+$blue: blue;
+$grey: grey;
+$yellow : yellow;
 
 body {
   font-family: $font;
@@ -57,7 +59,7 @@ body {
   line-height: 1.2;
   color: $grey;
   -webkit-font-smoothing: antialiased;
-  background:  wheat;
+  background:  $blue;
   border-top: 3px solid red;
 }
 
