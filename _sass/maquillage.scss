@@ -53,10 +53,10 @@ body {
   font-family: $font;
   font-size: 1rem;
   line-height: 1.2;
-  color: #444;
+  color: $textColor;
   -webkit-font-smoothing: antialiased;
   background: $background;
-  border-top: 3px solid red;
+  border-top: 3px solid $borderColor;
 }
 
 .container {
@@ -68,26 +68,27 @@ p {
   margin-bottom: 10px;
   line-height: 1.2;
 }
+
 a {
-  color: black;
+  color: $linkColor;
 }
 
 h2,
 h3 {
-  color: crimson;
+  color: $titleColor;
   margin-top: 3em;
   margin-bottom: 1.2em;
 }
 
 h1 {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: $titleFont;
 }
 h1 a {
-  color: #4d4d4d;
+  // color: #4d4d4d;
   text-decoration: none;
 }
 h1 span {
-  color: black;
+  color: $titleColor;
 }
 
 header {
@@ -95,7 +96,7 @@ header {
   width: 100%;
   padding: 20px 0 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $separator;
 }
 
 /*header with search engine*/
@@ -114,7 +115,7 @@ header .search-engine input[type="submit"] {
   padding: 5px;
   color: #fff;
   font-size: 0.8rem;
-  background-color: #29abe2;
+  background-color: $primaryColor;
   border: none;
   cursor: pointer;
 }
@@ -300,25 +301,25 @@ header .search-engine input[type="submit"] {
   padding: 4px;
   margin: 0.75rem 0;
   background-color: #fff;
-  border: 1px solid #29abe2;
+  border: 1px solid $primaryColor;
   border-radius: 4px;
   transition: all .2s ease-in-out;
 }
 .blobContent a {
-  color: #4d4d4d;
+  color: $linkColor;
   text-decoration: none;
-  border-bottom: 1px solid #4d4d4d;
+  border-bottom: 1px solid $linkColor;
   transition: all 0.3s
 }
 .blobContent a:hover,
 .blobContent a:focus {
-  color: #29abe2;
-  border-bottom-color: #29abe2;
+  color: $primaryColor;
+  border-bottom-color: $primaryColor;
 }
 .blobContent pre,
 .blobContent blockquote {
   margin: 0 2em;
-  background-color: #fff;
+  background-color: $blockquoteBackground;
 }
 .blobContent pre {
   margin: 2em;
@@ -330,7 +331,7 @@ header .search-engine input[type="submit"] {
   letter-spacing: .01rem;
   font-weight: 400;
   font-style: italic;
-  border-left: 5px solid #29abe2;
+  border-left: 5px solid $blockquoteBorder;
 }
 .blobContent blockquote p {
   margin: 0;
@@ -342,7 +343,7 @@ header .search-engine input[type="submit"] {
 
 .tags,
 .tags ul {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: $textFont;
   font-size: 13px;
   color: rgba(0,0,0,0.44);
   letter-spacing: 0;
@@ -354,9 +355,9 @@ header .search-engine input[type="submit"] {
 }
 .tags li {
   float: left;
-  background: #fafafa;
+  background: #fff;
   border-radius: 2px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #fff;
   padding: 3px 10px;
   margin-right: 8px;
   margin-bottom: 8px;
@@ -465,8 +466,8 @@ header .search-engine input[type="submit"] {
 404
 */
 #error-404 {
-  font-family: sans-serif;
-  color: #444;
+  font-family: $textFont;
+  color: $textColor;
   text-align: center;
   margin: 0px auto;
   margin-top: 5rem;
