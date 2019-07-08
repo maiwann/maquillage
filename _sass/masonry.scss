@@ -14,11 +14,16 @@
 .masonry-brick {
   
   max-height: 650px;
-  width: 100%;
   max-width: 900px;
   object-fit: contain;
 
   margin: 1em auto;
   width: auto;
   height: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .masonry-brick {
+  width: 100%;
+  }
 }
